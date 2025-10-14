@@ -15,6 +15,9 @@
         <li class="nav-item">
           <router-link to="/login" @click="logout" class="nav-link" active-class="active">Logout</router-link>
         </li>
+        <li>
+          <router-link to="/add-book" class="nav-link" active-class="active">Add Book</router-link>
+        </li>
         <li class="nav-item">
           <router-link to="/FireLogin" class="nav-link" active-class="active">Login</router-link>
         </li>

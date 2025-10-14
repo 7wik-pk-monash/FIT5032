@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
+import AddBookView from '../views/AddBookView.vue'
 import LoginView from '../views/LoginView.vue'
 import AccessDenied from '../views/AccessDenied.vue'
 import FirebaseSigninView from '@/views/FirebaseSigninView.vue'
@@ -14,6 +15,11 @@ const routes = [
     name: 'About',
     component: AboutView,
     meta: { requiresAuth: true },
+  },
+  {
+    path: '/add-book',
+    name: 'AddBook',
+    component: AddBookView,
   },
   {
     path: '/FireLogin',
